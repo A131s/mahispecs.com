@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facebook Integration</title>
+  
+  <!-- Font Awesome for Facebook Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    a {
+      text-decoration: none;
+      color: #1877f2;
+      font-size: 20px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    i {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Connect with Us on Facebook</h1>
+
+  <!-- Facebook Link with Icon -->
+  <a href="https://www.facebook.com/profile.php?id=61566026274299" target="_blank">
+    <i class="fab fa-facebook"></i> Visit our Facebook Page
+  </a>
+
+  <br><br>
+
+  <!-- Facebook Page Plugin -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"
+    nonce="xyz123"></script>
+
+  <div class="fb-page"
+       data-href="https://www.facebook.com/profile.php?id=61566026274299"
+       data-tabs="timeline"
+       data-width="500"
+       data-height=""
+       data-small-header="false"
+       data-adapt-container-width="true"
+       data-hide-cover="false"
+       data-show-facepile="true">
+    <blockquote cite="https://www.facebook.com/YourPageName" class="fb-xfbml-parse-ignore">
+      <a href="https://www.facebook.com/profile.php?id=61566026274299">Your Page Name</a>
+    </blockquote>
+  </div>
+
+</body>
+</html>
